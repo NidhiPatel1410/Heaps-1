@@ -53,8 +53,8 @@ class Solution {
             pq.add(nums[i]);
             // Capped size n-k
             if (pq.size() > (n - k)) {
-                int curr = pq.poll();
-                min = Math.min(min, curr);
+
+                min = Math.min(min, pq.poll());
             }
         }
         return min;
